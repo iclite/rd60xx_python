@@ -5,7 +5,7 @@ try:
     from pymodbus.client import ModbusSerialClient
     from loguru import logger
 except ImportError:
-    print("pymodbus, pyserial, loguru 为安装，无法运行程序，请先运行 pip install -r requirements.txt 或 pip install pymodbus pyserial loguru 安装依赖包。")
+    print("pymodbus, pyserial, loguru 未安装，无法运行程序，请先运行 pip install -r requirements.txt 或 pip install pymodbus pyserial loguru 安装依赖包。")
     exit(1)
 
 class RD60XX_REG(IntEnum):
